@@ -10,6 +10,8 @@ class TestBasics(unittest.TestCase):
 	def test_exponent(self):
 		result = rpn.calculate('2 6 ^')
 		self.assertEqual(64, result)
+	print("%s Result: %s", result, (fg('red'),attr('reset')))
 	def test_exponent(self):
 		result = rpn.calculate('2 2 ^')
 		self.assertEqual(4, result)
+	print("%s Result: %s", result, (fg('red'),attr('reset')))
