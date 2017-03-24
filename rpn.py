@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import operator
+import colored
 OPERATORS = {
 	'+': operator.add,
 	'-': operator.sub,
@@ -24,6 +25,6 @@ def calculate(arg):
 def main():
 	while True:
 		result = calculate(input('rpn calc> '))
-		print("Result:", result)
+		print("%s Result: %s", result, (fg('red'),attr('reset')))
 if __name__ == '__main__':
 	main()
