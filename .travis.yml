@@ -12,8 +12,8 @@ python:
 install:
   - pip3 install coveralls
 script:
- - python3 -m unittest test_rpn
- - coverage run --source -m unittest test_rpn
-	- coverage report -m
+  - python3 -m unittest test_rpn
+  - coverage run --source -m unittest test_rpn
+  - coverage report -m
 after_success:
 	coveralls
