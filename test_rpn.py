@@ -10,4 +10,6 @@ class TestBasics(unittest.TestCase):
 	def test_exponent(self):
 		result = rpn.calculate('2 6 ^')
 		self.assertEqual(64, result)
-	
+	def test_exponent(self):
+		result = rpn.calculate('2 2 ^')
+		self.assertEqual(4, result)
